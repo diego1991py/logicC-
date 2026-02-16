@@ -1,7 +1,4 @@
-﻿
-
-
-Console.Write("Ingrese un número o ingrese S para salir: ");
+﻿Console.Write("Ingrese un número: ");
 
 var number = Console.ReadLine();
 

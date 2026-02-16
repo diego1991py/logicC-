@@ -2,4 +2,7 @@
   <Folder Name="/01/">
     <Project Path="EvenNumber/EvenNumber.csproj" />
   </Folder>
+  <Folder Name="/02/">
+    <Project Path="LargerNumber/LargerNumber.csproj" />
+  </Folder>
 </Solution>
