@@ -5,4 +5,7 @@
   <Folder Name="/02/">
     <Project Path="LargerNumber/LargerNumber.csproj" />
   </Folder>
+  <Folder Name="/03/">
+    <Project Path="OrderNumbers/OrderNumbers.csproj" />
+  </Folder>
 </Solution>
