@@ -8,4 +8,7 @@
   <Folder Name="/03/">
     <Project Path="OrderNumbers/OrderNumbers.csproj" />
   </Folder>
+  <Folder Name="/04/">
+    <Project Path="Multiples/Multiples.csproj" />
+  </Folder>
 </Solution>
