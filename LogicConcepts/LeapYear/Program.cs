@@ -35,7 +35,7 @@ do
     {
         break;
     }
-  
+
     if (int.TryParse(numberString, out int year))
     {
         if (IsLeapYear(year))
@@ -50,12 +50,13 @@ do
     else
     {
         Console.WriteLine("Ingresar solo numeros");
+    }
 
 
 }
 while (numberString != "s");
 
-Console.WriteLine("Gracias");
+//Console.WriteLine("Gracias");
 
 
 

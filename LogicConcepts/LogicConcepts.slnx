@@ -14,4 +14,8 @@
   <Folder Name="/05/">
     <Project Path="LeapYear/LeapYear.csproj" Id="4a10aec8-c47b-4921-9e79-f4e1b515470c" />
   </Folder>
+  <Folder Name="/06/">
+    <Project Path="CEmployee.Backend/CEmployee.Backend.csproj" Id="a7d2be84-3618-412c-aa8c-f4490395e4e8" />
+    <Project Path="CEmployee.Frontend/CEmployee.Frontend.csproj" Id="d7645926-d41c-4445-8c37-0d97d5c2ee3c" />
+  </Folder>
 </Solution>
