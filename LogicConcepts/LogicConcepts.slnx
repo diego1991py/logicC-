@@ -18,4 +18,8 @@
     <Project Path="CEmployee.Backend/CEmployee.Backend.csproj" Id="a7d2be84-3618-412c-aa8c-f4490395e4e8" />
     <Project Path="CEmployee.Frontend/CEmployee.Frontend.csproj" Id="d7645926-d41c-4445-8c37-0d97d5c2ee3c" />
   </Folder>
+  <Folder Name="/07/">
+    <Project Path="Sales.Backend/Sales.Backend.csproj" Id="930bdc31-6f19-4598-aa25-e3d7626ea7d0" />
+    <Project Path="Sales.Frontend/Sales.Frontend.csproj" Id="66960db2-5ecb-4215-ab2e-0999bcbe9c73" />
+  </Folder>
 </Solution>
