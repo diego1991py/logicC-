@@ -1,70 +1,106 @@
 ﻿using CEmployee.Backend;
 
-var option = String.Empty;
-
-while (option != "s")
+class Program
 {
-    Console.WriteLine("Por favor ingresar a para ingresar datos o ingresar s para salir");
-    option = Console.ReadLine().ToLower();
-
-    if (option == "a")
+    static void Main(string[] args)
     {
-        try
+        string option = InitialOption();
+        while (option != "")
         {
-            Console.WriteLine("Por favor ingresar nombre");
-            var name = Console.ReadLine(); 
-
-            if (string.IsNullOrWhiteSpace(name))
+            
+            if (option == "a")
             {
-                Console.WriteLine("El campo del nombre no debe de estar vacio");                
+                Console.WriteLine("Bienvenido");
+                ShowMenu();
+            }
+            else if (option == "s")
+            {
+                Console.WriteLine($"Gracias, vuelva pronto");
+                break;
             }
             else
             {
-                Console.WriteLine("Por favor ingresar valor de las horas");
-                var salaryBasicHour = Console.ReadLine();
-
-                int.TryParse(salaryBasicHour, out int basicHour);
-
-                Console.WriteLine("Por favor ingresar las horas trabajadas");
-                var hoursWorked = Console.ReadLine();
-                int.TryParse(hoursWorked, out int hours);
-
-                var employee = new Employee(name, basicHour, hours);
-
-                Console.WriteLine("Por favor ingresar el salario mínimo");
-                var minimunWage = Console.ReadLine();
-                int.TryParse(minimunWage, out int minumun);
-
-                int monthlySalary = employee.CalculateMonthlySalary();
-
-                bool salaryGreaterThan = employee.IsSalaryGreaterThan(minumun);
-
-                if (salaryGreaterThan)
-                {
-                    Console.WriteLine($"{employee.NameEmployee} {monthlySalary}");
-                }
-                else
-                {
-                    Console.WriteLine($"{employee.NameEmployee}");
-
-                }
+                Console.WriteLine($"La opción {option} no es valida");
             }
+            option = InitialOption();
+        }       
 
-        }
-        catch (Exception ex)
+
+    }
+  
+    static string InitialOption()
+    {
+        Console.WriteLine("Por favor ingresar a para ingresar datos o ingresar s para salir");
+        string option = Console.ReadLine().ToLower();
+        if (string.IsNullOrWhiteSpace(option))
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine("El campo no debe de estar vacio");
+            option = InitialOption();
         }
-    }
-    else if (option == "s")
-    {
-        Console.WriteLine($"Gracias, vuelva pronto");
-    }
-    else
-    {
-        Console.WriteLine($"La opción {option} no es valida");
+        return option;
     }
 
-    
+
+    static void ShowMenu()
+    {
+
+    try
+    {
+        Console.WriteLine("Por favor ingresar nombre");
+        var name = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            Console.WriteLine("El campo del nombre no debe de estar vacio");
+            return;
+        }
+
+        Console.WriteLine("Por favor ingresar valor de las horas");
+        var salaryBasicHour = Console.ReadLine();
+
+        if (!int.TryParse(salaryBasicHour, out int basicHour))
+        {
+            Console.WriteLine("Ingresar solo valores númericos");
+            return;
+        }
+
+        Console.WriteLine("Por favor ingresar las horas trabajadas");
+        var hoursWorked = Console.ReadLine();
+        if (!int.TryParse(hoursWorked, out int hours))
+        {
+            Console.WriteLine("Ingresar solo valores númericos");
+            return;
+        }
+
+        var employee = new Employee(name, basicHour, hours);
+
+        Console.WriteLine("Por favor ingresar el salario mínimo");
+        var minimunWage = Console.ReadLine();
+
+        if (!int.TryParse(minimunWage, out int minumun))
+        {
+            Console.WriteLine("Ingresar solo valores númericos");
+            return;
+        }
+
+        bool salaryGreaterThan = employee.IsSalaryGreaterThan(minumun);
+
+        if (salaryGreaterThan)
+        {
+            Console.WriteLine($"Nombre: {employee.NameEmployee} \nSalario Mensual: {employee.MonthlySalary}");
+        }
+        else
+        {
+            Console.WriteLine($"Nombre: {employee.NameEmployee}");
+
+        }
+
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+
+    }
+    }
+
 }
-
