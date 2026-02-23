@@ -20,7 +20,7 @@ class Program
             }
             else
             {
-                Console.WriteLine($"La opción {option} no es valida");
+                Console.WriteLine($"La opción {option} no es válida");
             }
             option = InitialOption();
         }
