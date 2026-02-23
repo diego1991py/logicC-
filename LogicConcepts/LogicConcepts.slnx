@@ -22,4 +22,8 @@
     <Project Path="Sales.Backend/Sales.Backend.csproj" Id="930bdc31-6f19-4598-aa25-e3d7626ea7d0" />
     <Project Path="Sales.Frontend/Sales.Frontend.csproj" Id="66960db2-5ecb-4215-ab2e-0999bcbe9c73" />
   </Folder>
+  <Folder Name="/08/">
+    <Project Path="Student.Backend/Student.Backend.csproj" Id="0c352411-2d20-496c-a723-bf657e95360c" />
+    <Project Path="Student.Frontend/Student.Frontend.csproj" Id="ee0752f6-a380-46d4-b9c5-3e4eda1949da" />
+  </Folder>
 </Solution>
