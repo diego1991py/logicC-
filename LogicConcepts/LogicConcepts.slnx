@@ -1,29 +1,13 @@
 <Solution>
-  <Folder Name="/01/">
-    <Project Path="EvenNumber/EvenNumber.csproj" />
-  </Folder>
-  <Folder Name="/02/">
-    <Project Path="LargerNumber/LargerNumber.csproj" />
-  </Folder>
-  <Folder Name="/03/">
-    <Project Path="OrderNumbers/OrderNumbers.csproj" />
-  </Folder>
-  <Folder Name="/04/">
-    <Project Path="Multiples/Multiples.csproj" />
-  </Folder>
-  <Folder Name="/05/">
-    <Project Path="LeapYear/LeapYear.csproj" Id="4a10aec8-c47b-4921-9e79-f4e1b515470c" />
-  </Folder>
-  <Folder Name="/06/">
-    <Project Path="CEmployee.Backend/CEmployee.Backend.csproj" Id="a7d2be84-3618-412c-aa8c-f4490395e4e8" />
-    <Project Path="CEmployee.Frontend/CEmployee.Frontend.csproj" Id="d7645926-d41c-4445-8c37-0d97d5c2ee3c" />
-  </Folder>
-  <Folder Name="/07/">
-    <Project Path="Sales.Backend/Sales.Backend.csproj" Id="930bdc31-6f19-4598-aa25-e3d7626ea7d0" />
-    <Project Path="Sales.Frontend/Sales.Frontend.csproj" Id="66960db2-5ecb-4215-ab2e-0999bcbe9c73" />
-  </Folder>
-  <Folder Name="/08/">
-    <Project Path="Student.Backend/Student.Backend.csproj" Id="0c352411-2d20-496c-a723-bf657e95360c" />
-    <Project Path="Student.Frontend/Student.Frontend.csproj" Id="ee0752f6-a380-46d4-b9c5-3e4eda1949da" />
-  </Folder>
+  <Project Path="01/EvenNumber/EvenNumber.csproj" />
+  <Project Path="02/LargerNumber/LargerNumber.csproj" />
+  <Project Path="03/OrderNumbers/OrderNumbers.csproj" />
+  <Project Path="04/Multiples/Multiples.csproj" />
+  <Project Path="05/LeapYear/LeapYear.csproj" />
+  <Project Path="06/CEmployee.Backend/CEmployee.Backend.csproj" />
+  <Project Path="06/CEmployee.Frontend/CEmployee.Frontend.csproj" />
+  <Project Path="07/Sales.Backend/Sales.Backend.csproj" />
+  <Project Path="07/Sales.Frontend/Sales.Frontend.csproj" />
+  <Project Path="08/Student.Backend/Student.Backend.csproj" />
+  <Project Path="08/Student.Frontend/Student.Frontend.csproj" />
 </Solution>
